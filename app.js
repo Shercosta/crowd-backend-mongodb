@@ -117,6 +117,6 @@ app.get("/csport-login", (req, res) => {
   });
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server started on port http://localhost:3000");
 });
